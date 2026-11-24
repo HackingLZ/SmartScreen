@@ -1,0 +1,19 @@
+{
+  "collected_utc": "2026-11-24T14:11:20.746274+00:00",
+  "size": 2048,
+  "sha256": "c7468594ebb904070d170f041a848d3ca5d51c42f58eabb84d544be8700bbf7d",
+  "machine": "ARM64",
+  "windows_version": "Windows-11-10.0.22621-SP0",
+  "python_version": "3.13.9",
+  "method": "subprocess.Popen(shell=False), Windows CreateProcess",
+  "expected_exit_code": 73,
+  "scope": "Direct process validity control only; no ShellExecute, MOTW change, GUI interaction, or security-policy changes.",
+  "timeout": false,
+  "exit_code": 73,
+  "elapsed_seconds": 0.023488,
+  "stdout": "",
+  "stderr": "",
+  "valid_expected_program": true,
+  "ssh_process_exit_code": 0,
+  "privacy_note": "Local filesystem path and process identifiers omitted from this shareable validation summary."
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "collected_utc": "2026-11-23",
+  "selected_set_index": 0,
+  "scaling": "ShortEdge",
+  "resize_method": "resize_lanczos3",
+  "baseline_assets": {
+    "sha256": {
+      "model": "2ffbab5d3623d5e0ccd00d5bf3f1f20a600ee0edc560790de680d7dc8cba02c8",
+      "vectors": "3ce3d287443a56567fa8c5166fcc84ed3f9825836568bb6da6ae31bd708ef215",
+      "allowlist": "cc0f8922b0f932a682b0765184d1aef07e92a0216a5f4af5ad071ba4525d2b3a"
+    },
+    "versions": {
+      "model": "2025.10.7.5",
+      "vectors": "2026.2.23.1",
+      "allowlist": "2026.11.20.1"
+    }
+  },
+  "cases": [
+    {
+      "file": "scam.png",
+      "sha256": "76e859b45b44f53c0585d9f47c101aac8c8da496fb1d287786ef44c3349ea1dd",
+      "expected_classification": "scam",
+      "expected_pool_scores": [
+        99,
+        98,
+        99,
+        98
+      ],
+      "thresholds": [
+        95,
+        88,
+        85,
+        85
+      ],
+      "source_page": "https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/",
+      "source_image": "https://blogs.windows.com/wp-content/uploads/prod/sites/33/2025/01/Picture1.png",
+      "description": "Scam-page thumbnail isolated from Microsoft published warning example",
+      "preparation": {
+        "source_file": "source_warning.png",
+        "source_sha256": "599fa74a57a2e0a484f071c1b508cf6c10664cd4f699d3232e526ed317156a0d",
+        "crop_xyxy": [
+          440,
+          510,
+          911,
+          824
+        ],
+        "conversion": "RGB PNG; no other image edits"
+      }
+    },
+    {
+      "file": "not_scam.png",
+      "sha256": "a01f3662895d2bf626467345d33d9ed3458072b80b94bf00d581151579546d32",
+      "expected_classification": "not_scam",
+      "expected_pool_scores": [
+        97,
+        90,
+        76,
+        96
+      ],
+      "thresholds": [
+        95,
+        88,
+        85,
+        85
+      ],
+      "source_page": "https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/",
+      "source_image": "https://blogs.windows.com/wp-content/uploads/prod/sites/33/2025/01/scareware-blocker-settings.png",
+      "description": "Microsoft published Edge settings screenshot",
+      "preparation": {
+        "conversion": "Unmodified downloaded image"
+      }
+    }
+  ],
+  "attribution": "Images published by Microsoft in its January 27, 2025 Microsoft Edge Blog scareware-blocker demonstration. Source URLs and hashes are retained per image.",
+  "scope": "Two local smoke/regression controls; not a detection-accuracy benchmark or a test of browser enforcement. Neither pictured website is visited."
+}

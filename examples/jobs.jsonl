@@ -1,0 +1,4 @@
+{"id":"url-allow","type":"url","url":"https://example.com/"}
+{"id":"download-warning","type":"download","url":"https://demo.smartscreen.msft.net/other/malware.html"}
+{"id":"browser-unknown","type":"hash","sha256":"b62733c4b6ce27c4af3f34c8f1a7338c61405d82ce64b53ca2f6a29405e5bab9","size":55,"name":"benign-probe.exe","source":"https://example.com/smartscreen-test.exe"}
+{"id":"shell-unknown","type":"hash","surface":"shell","sha256":"b62733c4b6ce27c4af3f34c8f1a7338c61405d82ce64b53ca2f6a29405e5bab9","size":55,"name":"benign-probe.exe","source":"https://example.com/smartscreen-test.exe"}

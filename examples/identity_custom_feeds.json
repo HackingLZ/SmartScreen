@@ -1,0 +1,32 @@
+{
+  "user": {
+    "locale": "en-US"
+  },
+  "device": {
+    "id": null,
+    "customId": null,
+    "onlineIdTicket": "",
+    "family": 3,
+    "locale": "en-US",
+    "osVersion": "10.0.22621",
+    "browser": {
+      "internetExplorer": ""
+    },
+    "netJoinStatus": 0,
+    "enterprise": {},
+    "cloudSku": false,
+    "architecture": 12
+  },
+  "caller": {
+    "locale": "en-US",
+    "name": "",
+    "version": "158.0.4370.33"
+  },
+  "client": {
+    "version": "281483718164481",
+    "data": {
+      "customSynchronousLookupUris": "3155378975999999999-0",
+      "edgeSettings": "2.0-0"
+    }
+  }
+}

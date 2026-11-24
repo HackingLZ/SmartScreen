@@ -1,0 +1,44 @@
+{
+  "file": "smartscreen-benign-exit73-arm64.exe",
+  "format": "PE32+",
+  "architecture": "ARM64",
+  "machine": "0xaa64",
+  "size": 2048,
+  "sha256": "c7468594ebb904070d170f041a848d3ca5d51c42f58eabb84d544be8700bbf7d",
+  "authenticode_signature": "absent",
+  "timestamp": 0,
+  "entry_point_rva": "0x1000",
+  "expected_exit_code": 73,
+  "instructions": [
+    {
+      "rva": "0x1000",
+      "word": "0x52800920",
+      "assembly": "mov w0, #73"
+    },
+    {
+      "rva": "0x1004",
+      "word": "0x580083f0",
+      "assembly": "ldr x16, [pc, #0x107c] ; IAT RVA0x2080"
+    },
+    {
+      "rva": "0x1008",
+      "word": "0xd61f0200",
+      "assembly": "br x16 ; KERNEL32!ExitProcess"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "KERNEL32.dll",
+      "name": "ExitProcess"
+    }
+  ],
+  "behavior": "Terminate this process with exit code73. No other application behavior.",
+  "source": "generate_exit73.py",
+  "source_sha256": "152b0a2958cc3ac80768bc29d3cb0a64ddfd32c0b72175f6b144485bc88e44e2",
+  "reproducibility": "No build timestamps, randomness, external compiler, or embedded mutable content.",
+  "references": [
+    "https://learn.microsoft.com/en-us/windows/win32/debug/pe-format",
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess"
+  ],
+  "validation": "Direct Windows process execution recorded separately in lab_validation.json."
+}

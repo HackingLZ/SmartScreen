@@ -1,0 +1,127 @@
+{
+  "evidence_kind": "sanitized_native_schema_fixture",
+  "source_netlog_sha256": "f2763aa9a97d6c50dc0536ef191642ba315cfa8be5c4ff321dff576a400ab3af",
+  "source_transaction_id": "http2:11:563:1",
+  "source_event_indices": [
+    15871,
+    15878,
+    15880,
+    15886,
+    15899,
+    15908
+  ],
+  "request": {
+    "endpoint": "https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3",
+    "method": "POST",
+    "original_body_sha256": "cc4b4ca07f28c3161fa99841a43fb258519558b1650d594b997e6eec706f0100",
+    "json": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "redirectChain": [],
+      "enhancedRedirectChain": {
+        "redirectSource": null,
+        "referrerChain": [
+          {
+            "url": "https://demo.smartscreen.msft.net/other/phishing.html",
+            "navigationInitiation": 1,
+            "referrerUrl": "",
+            "type": 1,
+            "navigationTimeMsec": 1700000000000.0,
+            "isRetargeting": false,
+            "ipAddresses": [],
+            "serverRedirectChainByEntry": []
+          }
+        ]
+      },
+      "identity": {
+        "user": {
+          "locale": "en-US"
+        },
+        "device": {
+          "id": null,
+          "family": 3,
+          "locale": "en-US",
+          "osVersion": "10.0.22621.4317.ni_release",
+          "browser": {
+            "internetExplorer": "9.11.22621.0"
+          },
+          "netJoinStatus": 2,
+          "enterprise": {},
+          "cloudSku": false,
+          "architecture": 12
+        },
+        "caller": {
+          "locale": "en-US",
+          "name": "",
+          "version": "158.0.4370.33 (Official build) "
+        },
+        "client": {
+          "version": "281483737628675",
+          "data": {
+            "topTraffic": "638004170464094982",
+            "customSynchronousLookupUris": "0",
+            "edgeSettings": "2.0-a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693be7cd5353ad3",
+            "customSettings": "F95BA787499AB4FA9EFFF472CE383A14"
+          }
+        }
+      },
+      "config": {
+        "user": {
+          "uriReputation": {
+            "enforcedByPolicy": false,
+            "level": "warn"
+          }
+        },
+        "device": {
+          "appControl": {
+            "level": "anywhere"
+          },
+          "appReputation": {
+            "enforcedByPolicy": false,
+            "level": "warn"
+          }
+        }
+      },
+      "destination": {
+        "uri": "https://demo.smartscreen.msft.net/other/phishing.html",
+        "ip": "137.117.17.70"
+      },
+      "type": "top",
+      "forceServiceDetermination": false,
+      "correlationId": "3c0e05be-ac28-5bd5-9139-754d587ea938",
+      "synchronous": false
+    }
+  },
+  "response": {
+    "http_status": 200,
+    "complete": true,
+    "original_body_sha256": "e4e74ce945aa301ce92b0e6d07fb9d8506398ca144e66d5a850015943f34f3cc",
+    "json": {
+      "actions": [
+        {
+          "$type": "cache",
+          "key": {
+            "uri": "demo.smartscreen.msft.net/other/phishing.html",
+            "inheritance": "none"
+          },
+          "maxAge": 100800000000,
+          "serverContext": "synthetic-fixture-context",
+          "responseCategory": "Allowed",
+          "result": {
+            "$type": "evaluate"
+          }
+        }
+      ],
+      "serverContext": "synthetic-fixture-context",
+      "result": {
+        "$type": "evaluate",
+        "responseCategory": "Allowed",
+        "serverContext": "synthetic-fixture-context"
+      }
+    }
+  },
+  "removed_sensitive_paths": [
+    "$.identity.device.customId",
+    "$.identity.device.onlineIdTicket"
+  ],
+  "warning": "Addresses, nonzero correlation IDs, navigation timestamps and server contexts are synthetic; feedback URLs are omitted. This is not an exact wire capture. Original evidence remains local and excluded from Git."
+}

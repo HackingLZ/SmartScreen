@@ -1,0 +1,2 @@
+# Optional embedded Authenticode certificate inspection.
+cryptography>=44

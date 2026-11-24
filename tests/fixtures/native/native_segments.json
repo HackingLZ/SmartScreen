@@ -1,0 +1,271 @@
+{
+  "cases": [
+    {
+      "ranges": {
+        "query": "q=1",
+        "path": "a/b",
+        "fragment": "f",
+        "host": "a.b.example.com"
+      },
+      "canonical": "https://a.b.example.com/a/b?q=1#f",
+      "host_type": 1,
+      "input": "https://a.b.example.com/A/B?Q=1#F",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "a.b.example.com/a/b?q=1#f"
+        },
+        {
+          "segment_type": 1,
+          "text": "a.b.example.com/a/b?q=1"
+        },
+        {
+          "segment_type": 1,
+          "text": "a.b.example.com/a/b"
+        },
+        {
+          "segment_type": 1,
+          "text": "a.b.example.com/a"
+        },
+        {
+          "segment_type": 1,
+          "text": "a.b.example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "b.example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f612e622e6578616d706c652e636f6d2f612f623f713d312366",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": null,
+        "path": null,
+        "fragment": null,
+        "host": "example.com"
+      },
+      "canonical": "https://example.com",
+      "host_type": 1,
+      "input": "https://example.com",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": null,
+        "path": null,
+        "fragment": null,
+        "host": "example.com"
+      },
+      "canonical": "https://example.com",
+      "host_type": 1,
+      "input": "https://example.com/",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": null,
+        "path": "a",
+        "fragment": null,
+        "host": "example.com"
+      },
+      "canonical": "https://example.com/a",
+      "host_type": 1,
+      "input": "https://example.com/a",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com/a"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d2f61",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": "x=1",
+        "path": "a",
+        "fragment": null,
+        "host": "example.com"
+      },
+      "canonical": "https://example.com/a?x=1",
+      "host_type": 1,
+      "input": "https://example.com/a?x=1",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com/a?x=1"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com/a"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d2f613f783d31",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": "x=1",
+        "path": null,
+        "fragment": "x",
+        "host": "example.com"
+      },
+      "canonical": "https://example.com?x=1#x",
+      "host_type": 1,
+      "input": "https://example.com/?x=1#x",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com?x=1#x"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com?x=1"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d3f783d312378",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": null,
+        "path": "a/b",
+        "fragment": null,
+        "host": "192.168.1.2"
+      },
+      "canonical": "http://192.168.1.2/a/b",
+      "host_type": 2,
+      "input": "http://192.168.1.2/a/b",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "192.168.1.2/a/b"
+        },
+        {
+          "segment_type": 1,
+          "text": "192.168.1.2/a"
+        },
+        {
+          "segment_type": 1,
+          "text": "192.168.1.2"
+        }
+      ],
+      "canonical_hex": "687474703a2f2f3139322e3136382e312e322f612f62",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": "x",
+        "path": "a",
+        "fragment": "f",
+        "host": "[2001:0db8:0000:0000:0000:0000:0000:0001]"
+      },
+      "canonical": "http://[2001:0db8:0000:0000:0000:0000:0000:0001]/a?x#f",
+      "host_type": 3,
+      "input": "http://[2001:db8::1]/a?x#f",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a?x#f"
+        },
+        {
+          "segment_type": 1,
+          "text": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a?x"
+        },
+        {
+          "segment_type": 1,
+          "text": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a"
+        },
+        {
+          "segment_type": 1,
+          "text": "[2001:0db8:0000:0000:0000:0000:0000:0001]"
+        }
+      ],
+      "canonical_hex": "687474703a2f2f5b323030313a306462383a303030303a303030303a303030303a303030303a303030303a303030315d2f613f782366",
+      "status": 0
+    },
+    {
+      "ranges": {
+        "query": null,
+        "path": "b",
+        "fragment": null,
+        "host": "example.com"
+      },
+      "canonical": "https://example.com/b",
+      "host_type": 1,
+      "input": "https://USER:pass@EXAMPLE.COM:8443/a/../b//",
+      "candidates": [
+        {
+          "segment_type": 0,
+          "text": "example.com/b"
+        },
+        {
+          "segment_type": 1,
+          "text": "example.com"
+        },
+        {
+          "segment_type": 2,
+          "text": "com"
+        }
+      ],
+      "canonical_hex": "68747470733a2f2f6578616d706c652e636f6d2f62",
+      "status": 0
+    }
+  ]
+}

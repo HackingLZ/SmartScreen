@@ -1,0 +1,139 @@
+{
+  "evidence_kind": "sanitized_native_schema_fixture",
+  "source_netlog_sha256": "f2763aa9a97d6c50dc0536ef191642ba315cfa8be5c4ff321dff576a400ab3af",
+  "source_transaction_id": "http2:11:467:1",
+  "source_event_indices": [
+    8940,
+    8947,
+    8949,
+    9018,
+    9031,
+    9040
+  ],
+  "request": {
+    "endpoint": "https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3",
+    "method": "POST",
+    "original_body_sha256": "b031d34a22cafbf41bc2fbfd5c9302ed1543051bcd6ff5feafa9786e0510361b",
+    "json": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+      "redirectChain": [],
+      "enhancedRedirectChain": {
+        "redirectSource": null,
+        "referrerChain": [
+          {
+            "url": "https://example.com/",
+            "navigationInitiation": 1,
+            "referrerUrl": "",
+            "type": 1,
+            "navigationTimeMsec": 1700000000000.0,
+            "isRetargeting": false,
+            "ipAddresses": [],
+            "serverRedirectChainByEntry": []
+          }
+        ]
+      },
+      "identity": {
+        "user": {
+          "locale": "en-US"
+        },
+        "device": {
+          "id": null,
+          "family": 3,
+          "locale": "en-US",
+          "osVersion": "10.0.22621.4317.ni_release",
+          "browser": {
+            "internetExplorer": "9.11.22621.0"
+          },
+          "netJoinStatus": 2,
+          "enterprise": {},
+          "cloudSku": false,
+          "architecture": 12
+        },
+        "caller": {
+          "locale": "en-US",
+          "name": "",
+          "version": "158.0.4370.33 (Official build) "
+        },
+        "client": {
+          "version": "281483737628675",
+          "data": {
+            "topTraffic": "638004170464094982",
+            "customSynchronousLookupUris": "0",
+            "edgeSettings": "2.0-0",
+            "customSettings": "F95BA787499AB4FA9EFFF472CE383A14"
+          }
+        }
+      },
+      "config": {
+        "user": {
+          "uriReputation": {
+            "enforcedByPolicy": false,
+            "level": "warn"
+          }
+        },
+        "device": {
+          "appControl": {
+            "level": "anywhere"
+          },
+          "appReputation": {
+            "enforcedByPolicy": false,
+            "level": "warn"
+          }
+        }
+      },
+      "destination": {
+        "uri": "https://example.com/",
+        "ip": "172.66.147.243"
+      },
+      "type": "top",
+      "forceServiceDetermination": false,
+      "correlationId": "cbb44c74-6223-5ce7-8747-02518282572a",
+      "synchronous": false
+    }
+  },
+  "response": {
+    "http_status": 200,
+    "complete": true,
+    "original_body_sha256": "895aed2faf69ac7e11f8e946f2d604f867ff61aba105fa9e5a898d62477a46bd",
+    "json": {
+      "actions": [
+        {
+          "$type": "cache",
+          "key": {
+            "uri": "example.com",
+            "inheritance": "path"
+          },
+          "maxAge": 100800000000,
+          "serverContext": "synthetic-fixture-context",
+          "responseCategory": "Allowed",
+          "result": {
+            "$type": "allow"
+          }
+        },
+        {
+          "$type": "data",
+          "id": "edgeSettings",
+          "uri": "https://data-edge.smartscreen.microsoft.com/api/browser/edge/data/settings/3",
+          "verb": "POST"
+        },
+        {
+          "$type": "ping",
+          "uri": "https://ping-edge.smartscreen.microsoft.com/api/browser/edge/actions/3?pushCert=false&os=10.0.22621.4317.ni_release",
+          "timeout": 864000000000,
+          "verb": "POST"
+        }
+      ],
+      "serverContext": "synthetic-fixture-context",
+      "result": {
+        "$type": "allow",
+        "responseCategory": "Allowed",
+        "serverContext": "synthetic-fixture-context"
+      }
+    }
+  },
+  "removed_sensitive_paths": [
+    "$.identity.device.customId",
+    "$.identity.device.onlineIdTicket"
+  ],
+  "warning": "Addresses, nonzero correlation IDs, navigation timestamps and server contexts are synthetic; feedback URLs are omitted. This is not an exact wire capture. Original evidence remains local and excluded from Git."
+}

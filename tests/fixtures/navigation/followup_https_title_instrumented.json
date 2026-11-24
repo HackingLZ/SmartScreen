@@ -1,0 +1,137 @@
+{
+  "evidence_kind": "sanitized_native_schema_fixture",
+  "source_netlog_sha256": "f2763aa9a97d6c50dc0536ef191642ba315cfa8be5c4ff321dff576a400ab3af",
+  "source_transaction_id": "http2:11:563:27",
+  "source_event_indices": [
+    24107,
+    24114,
+    24116,
+    24132,
+    24133,
+    24142
+  ],
+  "request": {
+    "endpoint": "https://postnav-edge.smartscreen.microsoft.com/api/browser/edge/navigationcomplete/3",
+    "method": "POST",
+    "original_body_sha256": "d3f21bfdfec17af46af17a4908f3673592bf56b4f051f51e4e0e0682457be82d",
+    "json": {
+      "userAgent": "",
+      "correlationId": "00000000-0000-0000-0000-000000000000",
+      "identity": {
+        "user": {
+          "locale": "en-US"
+        },
+        "device": {
+          "id": null,
+          "family": 3,
+          "locale": "en-US",
+          "osVersion": "10.0.22621.4317.ni_release",
+          "browser": {
+            "internetExplorer": "9.11.22621.0"
+          },
+          "netJoinStatus": 2,
+          "enterprise": {},
+          "cloudSku": false,
+          "architecture": 12
+        },
+        "caller": {
+          "locale": "en-US",
+          "name": "",
+          "version": "158.0.4370.33 (Official build) "
+        },
+        "client": {
+          "version": "281483737628675",
+          "data": {
+            "topTraffic": "638004170464094982",
+            "customSynchronousLookupUris": "0",
+            "edgeSettings": "2.0-a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693be7cd5353ad3",
+            "customSettings": "F95BA787499AB4FA9EFFF472CE383A14"
+          }
+        }
+      },
+      "models": [
+        {
+          "name": "techScamTitleModel:2019-10-07",
+          "score": 16.3673437735292
+        }
+      ],
+      "signals": {
+        "title": "Windows Security Alert",
+        "faviconUrl": "https://httpbin.org/favicon.ico",
+        "certIssuerCommonName": "YE2",
+        "certIssuerLocalityName": "",
+        "certIssuerStateOrProvinceName": "",
+        "certIssuerCountryName": "US",
+        "certIssuerStreetAddresses": null,
+        "certIssuerOrganizationNames": [
+          "Let's Encrypt"
+        ],
+        "certIssuerOrganizationUnitNames": null,
+        "certIssuerDomainComponents": null,
+        "certSubjectCommonName": "httpbin.hbin02.postmanlabs.com",
+        "certSubjectLocalityName": "",
+        "certSubjectStateOrProvinceName": "",
+        "certSubjectCountryName": "",
+        "certSubjectStreetAddresses": null,
+        "certSubjectOrganizationNames": null,
+        "certSubjectOrganizationUnitNames": null,
+        "certSubjectDomainComponents": null,
+        "certValidFrom": "2026-11-05",
+        "certValidTo": "2027-02-03",
+        "redirectChain": [],
+        "enhancedRedirectChain": {
+          "redirectSource": null,
+          "referrerChain": [
+            {
+              "url": "https://httpbin.org/html",
+              "navigationInitiation": 1,
+              "referrerUrl": "",
+              "type": 1,
+              "navigationTimeMsec": 1700000000000.0,
+              "isRetargeting": false,
+              "ipAddresses": [],
+              "serverRedirectChainByEntry": []
+            }
+          ]
+        }
+      },
+      "destination": {
+        "ip": "44.209.237.184",
+        "uri": "https://httpbin.org/html"
+      },
+      "referrer": {},
+      "type": "top"
+    }
+  },
+  "response": {
+    "http_status": 200,
+    "complete": true,
+    "original_body_sha256": "51cc71c03bccb33b48213559e40bb1d8fb8a15c8f134a552ddd3615e5b1f5189",
+    "json": {
+      "actions": [
+        {
+          "$type": "cache",
+          "key": {
+            "uri": "https://httpbin.org/html",
+            "inheritance": "none"
+          },
+          "maxAge": 100800000000,
+          "serverContext": "synthetic-fixture-context",
+          "responseCategory": "Allowed",
+          "result": {}
+        }
+      ],
+      "serverContext": "synthetic-fixture-context",
+      "result": {
+        "$type": "allow",
+        "responseCategory": "Allowed",
+        "serverContext": "synthetic-fixture-context"
+      }
+    }
+  },
+  "removed_sensitive_paths": [
+    "$.identity.device.customId",
+    "$.identity.device.onlineIdTicket"
+  ],
+  "warning": "Addresses, nonzero correlation IDs, navigation timestamps and server contexts are synthetic; feedback URLs are omitted. This is not an exact wire capture. Original evidence remains local and excluded from Git."
+}

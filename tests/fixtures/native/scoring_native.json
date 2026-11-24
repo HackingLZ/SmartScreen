@@ -1,0 +1,266 @@
+{
+  "cases": [
+    {
+      "native_probabilities": [
+        0.5,
+        0.5
+      ],
+      "kind": "softmax",
+      "scale": 100,
+      "logits": [
+        0,
+        0
+      ]
+    },
+    {
+      "native_probabilities": [
+        0.2676231563091278,
+        0.7274751663208008,
+        0.004901689477264881
+      ],
+      "kind": "softmax",
+      "scale": 100,
+      "logits": [
+        0.01,
+        0.02,
+        -0.03
+      ]
+    },
+    {
+      "native_probabilities": [
+        1.0,
+        0.0
+      ],
+      "kind": "softmax",
+      "scale": 100,
+      "logits": [
+        1,
+        -1
+      ]
+    },
+    {
+      "native_probabilities": [
+        0.3333333432674408,
+        0.3333333432674408,
+        0.3333333432674408
+      ],
+      "kind": "softmax",
+      "scale": 100,
+      "logits": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "native_probabilities": [
+        0.2502806484699249,
+        0.1854124665260315,
+        0.33784356713294983,
+        0.22646330296993256
+      ],
+      "kind": "softmax",
+      "scale": 1,
+      "logits": [
+        0.1,
+        -0.2,
+        0.4,
+        0
+      ]
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 0
+    },
+    {
+      "distances_fixture": [
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 0
+    },
+    {
+      "distances_fixture": [
+        0.059,
+        0.059,
+        0.059,
+        0.059,
+        0.059
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.059,
+        0.059,
+        0.059,
+        0.059,
+        0.059
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.03,
+        0.07,
+        0.08,
+        0.09
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 40
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.03,
+        0.07,
+        0.08,
+        0.09
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 40
+    },
+    {
+      "distances_fixture": [
+        0.01,
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 20
+    },
+    {
+      "distances_fixture": [
+        0.01,
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ],
+      "kind": "knn2",
+      "native_near_match": true,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.009,
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": true,
+      "native_score": 20
+    },
+    {
+      "distances_fixture": [
+        0.009,
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ],
+      "kind": "knn2",
+      "native_near_match": true,
+      "near_match_boost": true,
+      "native_available": true,
+      "native_score": 100
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": false,
+      "native_available": false,
+      "native_score": 999
+    },
+    {
+      "distances_fixture": [
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "kind": "knn2",
+      "native_near_match": false,
+      "near_match_boost": true,
+      "native_available": false,
+      "native_score": 999
+    }
+  ]
+}

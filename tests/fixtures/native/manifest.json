@@ -1,0 +1,67 @@
+{
+  "scope": "Portable native arithmetic and synthetic URL controls; raw environment metadata excluded. Numeric observations are unchanged. These fixtures do not contain captured browser account context.",
+  "files": [
+    {
+      "file": "native_key_preimages.json",
+      "source_evidence": "analysis/cache_expansion/native_key_preimages.json",
+      "source_sha256": "b3cb54ba6c1a38f67ce9fd8eadb9031b008c57d0d319375b443b71fc711a0d10",
+      "fixture_sha256": "fd06f12d0e4ee050bb1d3223169cd486dbd2f040d1efc8e6c4b1386d3316e840",
+      "retained_fields": [
+        "cases"
+      ]
+    },
+    {
+      "file": "native_segments.json",
+      "source_evidence": "analysis/cache_expansion/native_segments.json",
+      "source_sha256": "f03c9ffaf0344e6098e5e4620071c782d0f70c8a73178825c532bc5a2b3c9306",
+      "fixture_sha256": "a27ed9ec31c134e7866894a9591e1780ba882ef3628185e8c5de5f983c2d5358",
+      "retained_fields": [
+        "cases"
+      ]
+    },
+    {
+      "file": "transforms_native.json",
+      "source_evidence": "analysis/scareware_native/transforms_native.json",
+      "source_sha256": "fc3dee59a156b1f930586526c7bdc28ea94d19de04630b7774336162423a3cdd",
+      "fixture_sha256": "099163fb23fbf919457dd4ac6c9cb7c2524ecedfd2a724be9de1650a02c656dc",
+      "retained_fields": [
+        "pixels",
+        "geometry"
+      ]
+    },
+    {
+      "file": "coefficients_native.json",
+      "source_evidence": "analysis/scareware_native/coefficients_native.json",
+      "source_sha256": "87b91e98c0994e1b2e026223cefa9dee98217255de75bf42688033b1d6431377",
+      "fixture_sha256": "ee59759373faa2516d86d8f1229624a1856b0440c0c108a589cbca57a54da41a",
+      "retained_fields": [
+        "cases"
+      ]
+    },
+    {
+      "file": "convolution_fixtures.json",
+      "source_evidence": "analysis/scareware_native/convolution_fixtures.json",
+      "source_sha256": "f95bc6f6778b9289fbc07cd2c5ec75a3feaa978e30426802ded9931cbd72c35e",
+      "fixture_sha256": "f95bc6f6778b9289fbc07cd2c5ec75a3feaa978e30426802ded9931cbd72c35e",
+      "retained_fields": "synthetic input array"
+    },
+    {
+      "file": "convolution_native.json",
+      "source_evidence": "analysis/scareware_native/convolution_native.json",
+      "source_sha256": "b79573418d377864d3066f4b6016f0605d1485475154b133f76a451bce79d03e",
+      "fixture_sha256": "b4c97b6566301c9664f4b008a24af734cfb434f090087420c43971b8d5b076eb",
+      "retained_fields": [
+        "cases"
+      ]
+    },
+    {
+      "file": "scoring_native.json",
+      "source_evidence": "analysis/scareware_scoring/native_parity.json",
+      "source_sha256": "e07d59d2e4e7b3d5cd8d8fb9323a372450336d9f1f75b849d6075c4c0a63bc22",
+      "fixture_sha256": "a14060f5b441becb0d43aebb111aa60a7aa4830f7689d2068129e68ffeaa41df",
+      "retained_fields": [
+        "cases"
+      ]
+    }
+  ]
+}

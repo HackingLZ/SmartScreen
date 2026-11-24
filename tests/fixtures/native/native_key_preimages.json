@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "example.com0",
+      "input": "example.com"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "example.com1",
+      "input": "example.com"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "example.com2",
+      "input": "example.com"
+    },
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "example.com/a?x#f0",
+      "input": "example.com/a?x#f"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "example.com/a?x#f1",
+      "input": "example.com/a?x#f"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "example.com/a?x#f2",
+      "input": "example.com/a?x#f"
+    },
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "example.com/b?x=1#f0",
+      "input": "https://EXAMPLE.com/a/../b?X=1#F"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "example.com/b?x=1#f1",
+      "input": "https://EXAMPLE.com/a/../b?X=1#F"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "example.com/b?x=1#f2",
+      "input": "https://EXAMPLE.com/a/../b?X=1#F"
+    },
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "a.example.com/a0",
+      "input": "http://a.example.com:8443/a"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "a.example.com/a1",
+      "input": "http://a.example.com:8443/a"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "a.example.com/a2",
+      "input": "http://a.example.com:8443/a"
+    },
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "example.com0",
+      "input": "https://example.com/"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "example.com1",
+      "input": "https://example.com/"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "example.com2",
+      "input": "https://example.com/"
+    },
+    {
+      "inheritance": 0,
+      "native_sha256_preimage": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a0",
+      "input": "http://[2001:db8::1]/a"
+    },
+    {
+      "inheritance": 1,
+      "native_sha256_preimage": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a1",
+      "input": "http://[2001:db8::1]/a"
+    },
+    {
+      "inheritance": 2,
+      "native_sha256_preimage": "[2001:0db8:0000:0000:0000:0000:0000:0001]/a2",
+      "input": "http://[2001:db8::1]/a"
+    }
+  ]
+}
